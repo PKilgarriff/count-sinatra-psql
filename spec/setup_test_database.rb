@@ -7,6 +7,6 @@ def setup_test_database
 
   # Clear the counter table
   connection.exec("DROP TABLE counter;")
-  connection.exec("CREATE TABLE counter(id SERIAL PRIMARY KEY, count integer);")
+  connection.exec("CREATE TABLE counter(id SERIAL PRIMARY KEY, count integer, time timestamp);")
   connection.exec("INSERT INTO counter (count) VALUES (0);")
 end

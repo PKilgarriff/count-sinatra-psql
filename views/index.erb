@@ -9,6 +9,13 @@
     <form action="/increment" method="post">
       <input type="submit" value="Increment">
     </form>
-    <div id="count"><%= @counter.count %></div>
+    <form action="/decrement" method="post">
+      <input type="submit" value="Decrement">
+    </form>
+    <form action="/reset" method="post">
+      <input type="submit" value="Reset">
+    </form>
+    <div id="count"><h1><%= @counter.count %></h1></div>
+    <div id="last_update"><%= @counter.last_update %></div>
   </body>
 </html>
